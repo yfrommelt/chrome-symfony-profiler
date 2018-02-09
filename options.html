@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symfony Profiler options</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+        #status {
+            line-height: 1em;
+            height: 1em;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<label>
+    Default profiler page:
+    <select id="page">
+        <option value="request">Request / Response</option>
+        <option value="time">Performance</option>
+        <option value="exception">Exception</option>
+        <option value="logger">Logs</option>
+        <option value="events">Events</option>
+        <option value="router">Routing</option>
+        <option value="cache">Cache</option>
+        <option value="twig">Twig</option>
+        <option value="db">Doctrine</option>
+        <option value="dump">Debug</option>
+        <option value="config">Configuration</option>
+    </select>
+</label>
+
+<div id="status"></div>
+
+<script src="options.js"></script>
+</body>
+</html>

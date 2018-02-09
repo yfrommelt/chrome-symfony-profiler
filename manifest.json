@@ -1,20 +1,28 @@
 {
-  "author": "Bartłomiej Czyż <bartek@czyz.it>",
-  "name": "Symfony Profiler",
-  "version": "1.0.0",
-  "description": "Opens Symfony Profiler in a new tab",
-  "browser_action": {
-    "default_icon": "icon.png"
-  },
-  "background": {
-    "scripts": [
-      "background.js"
-    ]
-  },
-  "permissions": [
-    "webRequest",
-    "http://*/*",
-    "https://*/*"
-  ],
-  "manifest_version": 2
+    "author": "Bartłomiej Czyż <bartek@czyz.it>",
+    "name": "Symfony Profiler",
+    "version": "1.0.0",
+    "description": "Symfony Profiler in devtools",
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "options_page": "options.html",
+    "devtools_page": "devtools.html",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "storage",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "manifest_version": 2
 }
