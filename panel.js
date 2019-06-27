@@ -17,7 +17,7 @@ chrome.storage.sync.get({
                 const xdebugTokenLink = request.response.headers.find(header => {
                     return ('X-Debug-Token-Link' === header.name);
                 });
-                if (false !== xdebugTokenLink) {
+                if (xdebugTokenLink) {
                     profiler.src = xdebugTokenLink.value + '?panel=' + defaultPage;
                 }
             }
