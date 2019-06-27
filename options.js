@@ -16,7 +16,6 @@ function saveOptions() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restoreOptions() {
-    // Use default value page = 'red' and likesColor = true.
     chrome.storage.sync.get({
         defaultPage: 'request'
     }, function (items) {
